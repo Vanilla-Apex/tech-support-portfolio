@@ -1,3 +1,6 @@
+💼 Real-world IT troubleshooting scenarios, written and solved by me—Tom Burris.  
+🛠️ From home networks to digitizer repairs, these case studies show how I apply CompTIA A+ and Network+ skills in real support situations.
+
 # 🛠️ IT Case Studies – Tom Burris
 
 Welcome! I’m Tom Burris, a certified IT support specialist based in Chiba, Japan.  
