@@ -17,3 +17,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Operating System Reinstall](./os_reinstall.md)
 - [RAM Upgrade on an Older Laptop](./ram_upgrade.md)
 - [Troubleshooting Slow PC Performance](./slow_pc.md)
+- [Diagnosing Slow Boot on an Older PC](./slow_boot_case_study.md)
