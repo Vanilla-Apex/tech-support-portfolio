@@ -19,3 +19,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Troubleshooting Slow PC Performance](./slow_pc.md)
 - [Diagnosing Slow Boot on an Older PC](./slow_boot_case_study.md)
 - [Installing and Configuring VirtualBox on Windows](./virtualbox_install_walkthrough.md)
+- [Packet Tracer Lab: Subnetting and IP Planning](./packet_tracer_lab.md)
