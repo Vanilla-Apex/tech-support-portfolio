@@ -21,3 +21,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Installing and Configuring VirtualBox on Windows](./virtualbox_install_walkthrough.md)
 - [Packet Tracer Lab: Subnetting and IP Planning](./packet_tracer_lab.md)
 - [Case Study: Configuring Home Printer on macOS](./printer_case_study.md)
+- [Mini Project: Automating Temp File Cleanup with a Windows Batch File](./temp_cleanup_batch_project.md)
