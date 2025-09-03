@@ -25,3 +25,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Documentation: Explaining Network Troubleshooting to Non-Technical Users](./network_troubleshooting_for_nontechs.md)
 - [Experiment Log: Testing Bootable Linux USB Tools (Kali + Ubuntu)](./linux_usb_experiment.md)
 - [Toolkit List: My Go-To Free Tools for Troubleshooting](./troubleshooting_toolkit_list.md)
+- [Diagnosing DNS Issues with Public DNS](./DNS_Issue_Public_DNS_Case_Study.md)
