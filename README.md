@@ -28,3 +28,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Diagnosing DNS Issues with Public DNS](./DNS_Issue_Public_DNS_Case_Study.md)
 - [Replacing a Laptop Battery (and Testing It Safely)](./Laptop_Battery_Replacement_Case_Study.md)
 - [USB Device Not Recognized – Registry Fix & Driver Cleanup](./USB_Device_Not_Recognized_Case_Study.md)
+- [Creating a Custom Windows Recovery Drive](./Windows_Recovery_Drive_Case_Study.md)
