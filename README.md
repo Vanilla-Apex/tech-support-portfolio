@@ -30,3 +30,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [USB Device Not Recognized – Registry Fix & Driver Cleanup](./USB_Device_Not_Recognized_Case_Study.md)
 - [Creating a Custom Windows Recovery Drive](./Windows_Recovery_Drive_Case_Study.md)
 - [Fixing a “No Boot Device Found” Error (UEFI/BIOS Settings)](./No_Boot_Device_Found_Case_Study.md)
+- [How I Used chkdsk and sfc /scannow to Fix System Corruption](./System_File_Corruption_Repair_Case_Study.md)
