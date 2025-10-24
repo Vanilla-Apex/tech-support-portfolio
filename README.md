@@ -32,3 +32,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Fixing a “No Boot Device Found” Error (UEFI/BIOS Settings)](./No_Boot_Device_Found_Case_Study.md)
 - [How I Used chkdsk and sfc /scannow to Fix System Corruption](./System_File_Corruption_Repair_Case_Study.md)
 - [Sharing a Printer Across a Local Network (Home Network Use Case)](./Printer_Sharing_Over_Local_Network_Case_Study.md)
+- [Replacing a Mechanical Hard Drive with an SSD (Cloning Included!)](./SSD_Upgrade_with_Cloning_Case_Study.md)
