@@ -1,124 +1,119 @@
-🛠️ Fixing Windows Updates Stuck at “Pending Install”
-📍 Summary
+# 🛠️ Fixing Windows Updates Stuck at “Pending Install”
 
-A Windows 10 system was unable to install updates, remaining stuck at “Pending Install” for multiple cumulative patches.
+## 🔧 Summary
+A Windows 10 system was unable to install updates, remaining stuck at “Pending Install” for multiple cumulative patches.  
 This case study covers the diagnostics performed, Windows Update component resets, and repair commands used to restore normal update functionality.
 
-🔎 Symptoms
+---
 
-Windows Updates stuck at “Pending Install”
+## 🔍 Symptoms
 
-Multiple reboots did not trigger installation
+- Windows Updates stuck at “Pending Install”  
+- Multiple reboots did not trigger installation  
+- Windows Update Troubleshooter did not resolve the issue  
+- High disk usage from Windows Update service  
+- No error messages, just endless “pending” state  
 
-Windows Update Troubleshooter did not resolve the issue
+---
 
-High disk usage from Windows Update service
+## 🔎 Diagnostics Performed
 
-No error messages, just endless “pending” state
+### 1. Checked Update History & Event Viewer
+- Confirmed updates were queued but never initiated  
+- No major error codes, suggesting component corruption or cache issues  
 
-🧪 Diagnostics Performed
-1. Checked Update History & Event Viewer
-
-Confirmed updates were queued but never initiated
-
-No major error codes, suggesting component corruption or cache issues
-
-2. Verified Windows Update Services
+### 2. Verified Windows Update Services
 
 Checked service states:
 
-wuauserv
-bits
-cryptSvc
-msiserver
+    wuauserv
+    bits
+    cryptSvc
+    msiserver
 
-Services were running but not progressing updates
+- Services were running but not progressing updates  
 
-3. Confirmed System Health
+### 3. Confirmed System Health
 
-Ran basic repair commands:
+Ran repair commands:
 
-sfc /scannow
-DISM /Online /Cleanup-Image /RestoreHealth
+    sfc /scannow
+    DISM /Online /Cleanup-Image /RestoreHealth
 
-SFC repaired some files
+- SFC repaired some files  
+- DISM completed successfully  
+- Issue persisted → cache likely corrupted  
 
-DISM completed successfully
+---
 
-Issue persisted → cache likely corrupted
+## 🔧 Resolution
 
-🔧 Resolution
-1. Stopped Windows Update Services
+### 1. Stopped Windows Update Services
 
-net stop wuauserv
-net stop bits
-net stop cryptSvc
-net stop msiserver
+    net stop wuauserv
+    net stop bits
+    net stop cryptSvc
+    net stop msiserver
 
-2. Cleared Windows Update Cache
+### 2. Cleared Windows Update Cache
 
-ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
-ren C:\Windows\System32\catroot2 catroot2.old
+    ren C:\Windows\SoftwareDistribution SoftwareDistribution.old
+    ren C:\Windows\System32\catroot2 catroot2.old
 
-3. Restarted Required Services
+### 3. Restarted Required Services
 
-net start wuauserv
-net start bits
-net start cryptSvc
-net start msiserver
+    net start wuauserv
+    net start bits
+    net start cryptSvc
+    net start msiserver
 
-4. Reset Winsock (Optional)
+### 4. Reset Winsock (Optional)
 
-netsh winsock reset
+    netsh winsock reset
 
-5. Rebooted System
+### 5. Rebooted System
+After reboot, updates installed successfully.
 
-After reboot, Windows Update installed all pending patches normally.
+---
 
-🧩 Root Cause
-
-Corruption inside the SoftwareDistribution and catroot2 directories prevented updates from initializing.
+## 🧩 Root Cause
+Corruption inside the SoftwareDistribution and catroot2 directories prevented updates from initializing.  
 Clearing and regenerating these folders resolved the issue.
 
-📘 Skills Demonstrated
+---
 
-Windows Update diagnostics
+## 📘 Skills Demonstrated
 
-SFC & DISM repair procedures
+- Windows Update diagnostics  
+- SFC & DISM workflows  
+- Resetting Windows Update components  
+- Using command-line tools for OS repair  
+- Understanding Windows servicing components  
+- Clear communication with non-technical users  
 
-Resetting Windows Update components
+---
 
-Using command-line tools for OS repair
+## 🧰 Tools & Commands Used
 
-Understanding Windows servicing architecture
+    sfc /scannow
+    DISM /Online /Cleanup-Image /RestoreHealth
+    net stop / net start service commands
+    SoftwareDistribution + catroot2 regeneration
+    netsh winsock reset
+    Event Viewer
+    Admin CMD / PowerShell
 
-Clear communication with non-technical end-users
+---
 
-🧰 Tools & Commands Used
+## 🛡️ Preventative Measures
 
-sfc /scannow
+- Restart PC regularly to finalize updates  
+- Maintain adequate disk space  
+- Avoid shutting down during update cycles  
+- Run SFC/DISM again if update issues return  
 
-DISM /Online /Cleanup-Image /RestoreHealth
+---
 
-Windows Update service resets
-
-Cache folder regeneration
-
-Event Viewer
-
-Admin CMD & PowerShell
-
-🧩 Preventative Measures
-
-Restart PC regularly to apply updates cleanly
-
-Maintain adequate free storage
-
-Avoid shutting down during update cycles
-
-Run SFC/DISM if update issues reappear
-
-✅ Final Outcome
-
-After repairing Windows Update components and clearing the corrupted cache, the system successfully installed all updates.
-A follow-up check confirmed healthy servicing components and stable system performance.
+## ✅ Final Outcome
+After resetting Windows Update components and clearing the corrupted cache, the system successfully installed all updates.  
+Follow-up checks confirmed healthy servicing components and stable system performance.
