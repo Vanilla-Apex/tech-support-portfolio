@@ -35,3 +35,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Replacing a Mechanical Hard Drive with an SSD (Cloning Included!)](./SSD_Upgrade_with_Cloning_Case_Study.md)
 - [Automating Browser Cache Clear with Task Scheduler + Script](./Browser_Cache_Clear_Automation_Case_Study.md)
 - [Diagnosing and Fixing Laptop Overheating & Thermal Throttling](./laptop_overheating_thermal_throttling.md)
+- [Fixing Windows Updates Stuck at “Pending Install”](./windows_update_pending_install_fix.md)
