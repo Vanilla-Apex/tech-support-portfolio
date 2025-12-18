@@ -36,3 +36,5 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Automating Browser Cache Clear with Task Scheduler + Script](./Browser_Cache_Clear_Automation_Case_Study.md)
 - [Diagnosing and Fixing Laptop Overheating & Thermal Throttling](./laptop_overheating_thermal_throttling.md)
 - [Fixing Windows Updates Stuck at “Pending Install”](./windows_update_pending_install_fix.md)
+- [Fixing a Broken GPU Driver Causing Black Screen](./gpu_driver_black_screen_fix.md)
+- [DNS Troubleshooting for Slow Website Resolution](./dns_troubleshooting_slow_website_resolution.md)
