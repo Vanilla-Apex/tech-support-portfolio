@@ -1,69 +1,72 @@
-📄 Case Study: DNS Resolution Delays Caused by Stale Cache and TTL Mismatch
+# 🛠️ Case Study: DNS Resolution Delays Caused by Stale Cache and TTL Mismatch
 
 ---
 
-🧩 Scenario
+## 🔧 Summary
 
-A user reported that specific websites were consistently slow to load on one device, while other websites and devices on the same network performed normally. Page loads were delayed rather than fully failing, suggesting partial name resolution issues rather than complete connectivity loss.
+A user reported that specific websites were consistently slow to load on one device, while other websites and devices on the same network performed normally. Pages eventually loaded, but name resolution was noticeably delayed rather than failing outright.
 
----
-
-🔍 Problem
-
-Initial connectivity checks showed no packet loss or latency issues. DNS resolution was working, but responses were noticeably delayed for certain domains. This suggested a potential issue with cached DNS records or mismatched Time To Live (TTL) values rather than a complete DNS server outage.
+This case study covers diagnosing DNS-related latency caused by stale cached records and mismatched Time To Live (TTL) values, and resolving the issue by validating resolver behavior and switching DNS providers.
 
 ---
 
-🛠️ Steps Taken
+## 🔍 Symptoms
 
-1. Confirmed basic connectivity:
-   - Verified access to the local gateway.
-   - Successfully pinged external IP addresses (e.g. 8.8.8.8).
-   - Result: Network connectivity was stable.
-
-2. Tested DNS resolution timing:
-   - Ran `nslookup` against affected domains.
-   - Observed delayed responses despite successful resolution.
-   - Compared resolution times against unaffected domains.
-
-3. Checked DNS resolver source:
-   - Confirmed the system was using DNS servers provided automatically via DHCP.
-   - Identified ISP-provided DNS as the active resolver.
-
-4. Inspected DNS cache behavior:
-   - Flushed the local DNS cache using `ipconfig /flushdns`.
-   - Retested name resolution immediately after cache clearance.
-   - Result: Temporary improvement in resolution speed.
-
-5. Compared public DNS resolvers:
-   - Manually configured the system to use:
-     - Primary: 8.8.8.8 (Google)
-     - Secondary: 1.1.1.1 (Cloudflare)
-   - Retested affected domains using `nslookup`.
-
-6. Retested browsing performance:
-   - Observed consistent and immediate DNS responses.
-   - Website load times stabilized across all previously affected domains.
+- Websites took several seconds to begin loading  
+- Pages eventually loaded successfully  
+- Download and streaming speeds were normal  
+- Issue affected multiple browsers  
+- Problem persisted across different websites  
+- Restarting the system provided only temporary improvement  
 
 ---
 
-✅ Result
+## 🧪 Diagnostics Performed
+
+### 1. Verified Network Connectivity
+- Confirmed access to the local gateway  
+- Successfully pinged external IP addresses (e.g. `8.8.8.8`)  
+- Result: Network connectivity was stable  
+
+### 2. Tested DNS Resolution Timing
+- Ran `nslookup` against affected domains  
+- Observed delayed responses despite successful resolution  
+- Compared resolution timing with unaffected domains  
+
+### 3. Identified Active DNS Resolver
+- Confirmed the system was receiving DNS settings via DHCP  
+- Determined the ISP-provided DNS servers were in use  
+
+### 4. Tested DNS Cache Behavior
+- Flushed the local DNS cache using `ipconfig /flushdns`  
+- Retested DNS resolution immediately after cache clearance  
+- Observed temporary improvement in resolution speed  
+
+### 5. Compared Public DNS Providers
+- Manually configured DNS settings:
+  - Primary: `8.8.8.8` (Google)  
+  - Secondary: `1.1.1.1` (Cloudflare)  
+- Retested name resolution using `nslookup`  
+
+---
+
+## ✅ Resolution
 
 Switching to public DNS resolvers eliminated the resolution delays. DNS queries returned immediately, and affected websites loaded consistently without lag.
 
 ---
 
-🧰 Tools Used
+## 🧰 Tools Used
 
-- Command Prompt (`ping`, `nslookup`, `ipconfig /flushdns`)
-- Windows network adapter IPv4 settings
-- Public DNS resolvers (Google, Cloudflare)
+- Command Prompt (`ping`, `nslookup`, `ipconfig /flushdns`)  
+- Windows network adapter IPv4 settings  
+- Public DNS providers (Google, Cloudflare)  
 
 ---
 
-🧠 What I Learned / Explained to the User
+## 🧠 What I Learned / Explained to the User
 
-- DNS issues don’t always cause complete failures—delays can be caused by stale cached records.
-- ISP DNS resolvers may return outdated records due to aggressive or inconsistent TTL handling.
-- Flushing the DNS cache can temporarily mask the issue, but changing resolvers provides a more reliable fix.
-- DNS performance can directly affect perceived website speed, even when connectivity is otherwise healthy.
+- DNS issues can cause noticeable delays without breaking connectivity  
+- Stale cached records and TTL mismatches can degrade browsing performance  
+- Flushing the DNS cache may temporarily mask the issue  
+- Switching to reliable public DNS resolvers can provide a consistent long-term fix  
