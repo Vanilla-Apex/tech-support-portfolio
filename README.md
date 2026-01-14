@@ -39,3 +39,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Fixing a Broken GPU Driver Causing Black Screen](./gpu_driver_black_screen_fix.md)
 - [DNS Resolution Delays Caused by Stale Cache and TTL Mismatch](./dns_resolution_delay_stale_cache_ttl_case.md)
 - [DNS Troubleshooting for Slow Website Resolution](./dns_troubleshooting_slow_website_resolution.md)
+- - [Windows Service Fails to Start Due to Dependency Chain Misconfiguration](./windows_service_dependency_failure_case.md)
