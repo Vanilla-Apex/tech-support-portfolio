@@ -41,3 +41,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [DNS Troubleshooting for Slow Website Resolution](./dns_troubleshooting_slow_website_resolution.md)
 - [Windows Service Fails to Start Due to Dependency Chain Misconfiguration](./windows_service_dependency_failure_case.md)
 - [Linux Disk Full Despite Available Space Due to Inode Exhaustion](./linux_inode_exhaustion_disk_full_case.md)
+- [Linux Service Fails to Start on Boot Due to systemd Unit Misconfiguration](./linux_systemd_service_startup_failure_case.md)
