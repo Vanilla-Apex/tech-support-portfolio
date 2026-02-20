@@ -44,3 +44,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Linux Service Fails to Start on Boot Due to systemd Unit Misconfiguration](./linux_systemd_service_startup_failure_case.md)
 - [Rack Deployment Validation for Newly Installed Server (Simulated Data Center Scenario)](./rack_deployment_validation_new_server_case.md)
 - [Server Fails to Power On Due to Incorrect Power Redundancy Configuration (Simulated Data Center Scenario)](./server_power_redundancy_misconfiguration_case.md)
+- [Network Interface Link Down After Rack Installation (Simulated Data Center Scenario)](./network_interface_link_down_after_rack_install_case.md)
