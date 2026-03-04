@@ -46,3 +46,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Server Fails to Power On Due to Incorrect Power Redundancy Configuration (Simulated Data Center Scenario)](./server_power_redundancy_misconfiguration_case.md)
 - [Network Interface Link Down After Rack Installation (Simulated Data Center Scenario)](./network_interface_link_down_after_rack_install_case.md)
 - [Thermal Alert Triggered by Improper Rack Airflow (Simulated Data Center Scenario)](./thermal_alert_improper_rack_airflow_case.md)
+- [SaaS Login Failure Due to Account Lockout](./saas_login_failure_account_lockout_case_study.md)
