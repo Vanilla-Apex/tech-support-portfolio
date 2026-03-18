@@ -48,3 +48,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Thermal Alert Triggered by Improper Rack Airflow (Simulated Data Center Scenario)](./thermal_alert_improper_rack_airflow_case.md)
 - [SaaS Login Failure Due to Account Lockout](./saas_login_failure_account_lockout_case_study.md)
 - [Diagnosing High CPU Usage Causing System Slowdown](./high_cpu_usage_system_slowdown_case_study.md)
+- [User Unable to Connect to VPN](./vpn_connection_failure_case_study.md)
