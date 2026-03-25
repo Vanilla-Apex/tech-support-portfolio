@@ -49,3 +49,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [SaaS Login Failure Due to Account Lockout](./saas_login_failure_account_lockout_case_study.md)
 - [Diagnosing High CPU Usage Causing System Slowdown](./high_cpu_usage_system_slowdown_case_study.md)
 - [User Unable to Connect to VPN](./vpn_connection_failure_case_study.md)
+- [Diagnosing Email Delivery Failure Between External and Internal Domains](./email_delivery_failure_mx_record_case_study.md)
