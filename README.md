@@ -50,3 +50,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Diagnosing High CPU Usage Causing System Slowdown](./high_cpu_usage_system_slowdown_case_study.md)
 - [User Unable to Connect to VPN](./vpn_connection_failure_case_study.md)
 - [Diagnosing Email Delivery Failure Between External and Internal Domains](./email_delivery_failure_mx_record_case_study.md)
+- [User Unable to Access Shared Drive Due to Permission Misconfiguration](./shared_drive_permission_issue_case_study.md)
