@@ -53,3 +53,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [User Unable to Access Shared Drive Due to Permission Misconfiguration](./shared_drive_permission_issue_case_study.md)
 - [Multiple Users Unable to Access Email Due to Service Outage](./email_service_outage_case_study.md)
 - [Application Failing Due to Disk Space Exhaustion](./application_failure_due_to_disk_space_case_study.md)
+- [Intermittent Network Connectivity Caused by Faulty Network Adapter Driver](./intermittent_network_issue_driver_case_study.md)
