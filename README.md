@@ -56,3 +56,4 @@ I created this portfolio to demonstrate my hands-on technical abilities, communi
 - [Intermittent Network Connectivity Caused by Faulty Network Adapter Driver](./intermittent_network_issue_driver_case_study.md)
 - [Service Failing to Start Due to Configuration Error (Linux)](./linux_service_failure_configuration_case_study.md)
 - [High Disk I/O Causing Server Performance Degradation (Linux)](./linux_high_disk_io_case_study.md)
+- [Web Application Unreachable Due to Failed Backend Service](./web_application_backend_service_failure_case_study.md)
