@@ -72,7 +72,7 @@ The portfolio is designed to show practical troubleshooting discipline, clear te
 - [High Disk I/O Causing Server Performance Degradation (Linux)](./linux_high_disk_io_case_study.md)
 - [Web Application Unreachable Due to Failed Backend Service](./web_application_backend_service_failure_case_study.md)
 - [Windows Service Fails to Start Due to Dependency Chain Misconfiguration](./windows_service_dependency_failure_case.md)
-
+- [High Memory Utilization Causing Service Instability (Linux)](./linux_memory_utilization_service_instability_case_study.md)
 ---
 
 ## 🏢 Simulated Data Center Scenarios
