@@ -60,7 +60,7 @@ The portfolio is designed to show practical troubleshooting discipline, clear te
 - [Sharing a Printer Across a Local Network (Home Network Use Case)](./Printer_Sharing_Over_Local_Network_Case_Study.md)
 - [Intermittent Network Connectivity Caused by Faulty Network Adapter Driver](./intermittent_network_issue_driver_case_study.md)
 - [User Unable to Connect to VPN](./vpn_connection_failure_case_study.md)
-
+- [Internal Application Failure Caused by DNS Resolution Issue](./internal_application_dns_resolution_case_study.md)
 ---
 
 ## 🐧 Linux & Server Troubleshooting
