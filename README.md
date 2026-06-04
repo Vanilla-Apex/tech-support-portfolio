@@ -61,6 +61,7 @@ The portfolio is designed to show practical troubleshooting discipline, clear te
 - [Intermittent Network Connectivity Caused by Faulty Network Adapter Driver](./intermittent_network_issue_driver_case_study.md)
 - [User Unable to Connect to VPN](./vpn_connection_failure_case_study.md)
 - [Internal Application Failure Caused by DNS Resolution Issue](./internal_application_dns_resolution_case_study.md)
+- [Web Application Unavailable Due to Expired SSL Certificate](./ssl_certificate_expiration_case_study.md)
 ---
 
 ## 🐧 Linux & Server Troubleshooting
